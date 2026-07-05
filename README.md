@@ -55,6 +55,11 @@ with the alternates disclosed. Read `STEP3_RESULTS.md` before drawing conclusion
   defect logs) and the **measured / assumption / external_validation_required**
   evidence-labeling scheme used throughout.
 
+The method has been packaged as a ready-to-install **Claude Agent Skill** in
+[`skill/`](skill/) — see [`skill/README.md`](skill/README.md) for what it's for
+(killing big, expensive, or hard-to-reverse ideas early) and how to install it in
+Claude Code / claude.ai / the API.
+
 ## What was never evaluated
 
 - **Phases 3–4 were not built:** the conjunction Monte Carlo and the taggability census.
