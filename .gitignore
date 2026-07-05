@@ -1,0 +1,22 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# CelesTrak raw catalog dumps — excluded pending explicit redistribution terms.
+# CelesTrak's usage policy (celestrak.org/usage-policy.php) governs download
+# frequency only and is silent on redistribution, so the bulk dumps are not
+# committed. Regenerate them with `python run_all.py` (calls shared/fetch_data.py);
+# provenance and retrieval instructions are in SOURCES.md. Derived/processed
+# products, agent-produced evidence JSONs, and study outputs ARE committed.
+/data/raw/satcat.csv
+/data/raw/gp_*.csv
+
+# Raw evidence files excluded for privacy — they embed a local session path.
+# Their complete cited-source lists are preserved in SOURCES.md (the "Step 3
+# evidence — full source list" provenance appendix and the "Published top-50
+# list" section); retrieval instruction: fetch each documented URL.
+/data/raw/step3_evidence.json
+/data/raw/top50_mcknight.json
