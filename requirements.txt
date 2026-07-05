@@ -1,0 +1,19 @@
+# Python 3.11.9. Dependency justifications (campaign spec):
+# numpy/scipy/pandas/matplotlib/PyYAML: defaults, no justification required.
+# PuLP: exact MILP for the fixed-offset tour-selection model (Gate 2 names a
+#   MILP); ships with CBC, no system solver install needed.
+# sgp4: retained for Study 3 (conjunction screening), not built in this pass;
+#   Studies 1-2 use GP mean elements directly. Kept pinned so Study 3 can be
+#   added without re-resolving the environment.
+# Rejected from the Step-1 proposal: skyfield/astropy (frame precision
+#   irrelevant at secular-J2 fidelity), pymsis (no decay modeling needed to
+#   trip Gates 1-2), RL libraries (no sequential-decision structure survives
+#   the MILP/beam formulation; prior expectation upheld). poliastro: archived,
+#   not used.
+matplotlib==3.11.0
+numpy==2.4.6
+pandas==3.0.3
+PuLP==3.3.2
+PyYAML==6.0.3
+scipy==1.17.1
+sgp4==2.27

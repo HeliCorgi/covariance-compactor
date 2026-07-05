@@ -1,0 +1,115 @@
+{
+  "population": "REAL-TOP50 (McKnight 2021 published table, 49/50 orbit-matched to current catalog, published masses)",
+  "n_objects": 49,
+  "n_draws": 2000,
+  "prior_model": "v2 CORRECTED: class common-mode + idiosyncratic (see config)",
+  "gate1_threshold": "P(flips>=2) >= 0.20 required, else dossier product dead",
+  "gate1_letter_verdict": "PASS (does not trip)",
+  "gate1_evidential_note": "the pasted metric must be read against the null control: evidential weight is P_primary - P_null and gain - gain_null",
+  "branches": {
+    "detumble_0.004": {
+      "primary": {
+        "P_flips_ge_2": 0.9985,
+        "mean_flips": 4.5545,
+        "mean_value_gain_pct": 0.45462860384422554
+      },
+      "null_control_zero_information": {
+        "P_flips_ge_2": 0.997,
+        "mean_flips": 4.454,
+        "mean_value_gain_pct": -0.29000907055410385
+      },
+      "spin_only_true": {
+        "P_flips_ge_2": 0.0215,
+        "mean_flips": 0.2705,
+        "mean_value_gain_pct": 0.015575283757189655
+      },
+      "sensitivity_post_mass_30pct": {
+        "P_flips_ge_2": 0.9975,
+        "mean_flips": 4.6475,
+        "mean_value_gain_pct": 0.17210523501018454
+      },
+      "evidential_weight": {
+        "P_flips_ge_2_minus_null": 0.0015,
+        "value_gain_pct_minus_null": 0.745
+      }
+    },
+    "detumble_0.05": {
+      "primary": {
+        "P_flips_ge_2": 0.9965,
+        "mean_flips": 4.545,
+        "mean_value_gain_pct": 0.604303176252548
+      },
+      "null_control_zero_information": {
+        "P_flips_ge_2": 0.9995,
+        "mean_flips": 4.4185,
+        "mean_value_gain_pct": -0.21193641467931787
+      },
+      "spin_only_true": {
+        "P_flips_ge_2": 0.8405,
+        "mean_flips": 2.517,
+        "mean_value_gain_pct": 0.23953099529500912
+      },
+      "sensitivity_post_mass_30pct": {
+        "P_flips_ge_2": 0.999,
+        "mean_flips": 4.6465,
+        "mean_value_gain_pct": 0.3061272513406387
+      },
+      "evidential_weight": {
+        "P_flips_ge_2_minus_null": -0.003,
+        "value_gain_pct_minus_null": 0.816
+      }
+    },
+    "detumble_0.1": {
+      "primary": {
+        "P_flips_ge_2": 0.999,
+        "mean_flips": 4.5825,
+        "mean_value_gain_pct": 0.8887035635530264
+      },
+      "null_control_zero_information": {
+        "P_flips_ge_2": 0.997,
+        "mean_flips": 4.4585,
+        "mean_value_gain_pct": -0.22750401898961564
+      },
+      "spin_only_true": {
+        "P_flips_ge_2": 0.96,
+        "mean_flips": 3.256,
+        "mean_value_gain_pct": 0.5444436415488905
+      },
+      "sensitivity_post_mass_30pct": {
+        "P_flips_ge_2": 0.9985,
+        "mean_flips": 4.731,
+        "mean_value_gain_pct": 0.48620534234561824
+      },
+      "evidential_weight": {
+        "P_flips_ge_2_minus_null": 0.002,
+        "value_gain_pct_minus_null": 1.116
+      }
+    },
+    "detumble_1.0": {
+      "primary": {
+        "P_flips_ge_2": 0.9995,
+        "mean_flips": 4.766,
+        "mean_value_gain_pct": 5.763833519171263
+      },
+      "null_control_zero_information": {
+        "P_flips_ge_2": 0.9985,
+        "mean_flips": 4.4145,
+        "mean_value_gain_pct": -0.36588082255504917
+      },
+      "spin_only_true": {
+        "P_flips_ge_2": 0.998,
+        "mean_flips": 4.5455,
+        "mean_value_gain_pct": 5.823365376891081
+      },
+      "sensitivity_post_mass_30pct": {
+        "P_flips_ge_2": 0.9985,
+        "mean_flips": 4.776,
+        "mean_value_gain_pct": 5.245599439886002
+      },
+      "evidential_weight": {
+        "P_flips_ge_2_minus_null": 0.001,
+        "value_gain_pct_minus_null": 6.13
+      }
+    }
+  }
+}

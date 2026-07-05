@@ -1,0 +1,31 @@
+{
+  "gate2_threshold": ">=8 characterization encounters / vehicle / 24 months in 200 m/s (rendezvous costing)",
+  "beam_best_at_200": 9,
+  "beam_best_cluster": "SL-8-like i=82.9 alt=972 n=201",
+  "beam_by_budget": {
+    "150.0": 8,
+    "200.0": 9,
+    "250.0": 9
+  },
+  "milp_by_budget": {
+    "150.0": 4,
+    "200.0": 5,
+    "250.0": 6
+  },
+  "adaptive_ub_by_budget": {
+    "150.0": 8,
+    "200.0": 8,
+    "250.0": 9
+  },
+  "flyby_reference_by_budget": {
+    "150.0": 13,
+    "200.0": 21,
+    "250.0": 21
+  },
+  "tag_mode_beam_by_budget": {
+    "150.0": 6,
+    "200.0": 7,
+    "250.0": 8
+  },
+  "gate2_verdict": "PASS (does not trip)"
+}

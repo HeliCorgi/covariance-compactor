@@ -1,0 +1,104 @@
+# Master configuration. Every numeric parameter is labeled:
+#   [measured]   computed from fetched catalog data
+#   [assumption] stated engineering assumption (no verified source yet)
+#   [sourced]    literature value; URL in SOURCES.md
+# Determinism: per-run seeds are derived as master_seed + run_index.
+
+master_seed: 20260705
+
+band:
+  alt_min_km: 600.0
+  alt_max_km: 1000.0
+
+# --- Class properties per rocket-body family -------------------------------
+# mass_kg / length_m / diam_m: class-level values; [sourced] entries have URLs
+# in SOURCES.md (Phase-0 harvest); others [assumption]. NEVER object-specific
+# fabrications. Where the published McKnight table supplies a per-object mass,
+# that overrides the class value (see data/processed/top50_match.csv).
+families:
+  SL-16:   {mass_kg: 9000, length_m: 10.4, diam_m: 3.9}   # dry 8300 [sourced]; ~9000 on-orbit w/ residuals
+  SL-8:    {mass_kg: 1400, length_m: 6.5,  diam_m: 2.4}   # [sourced] Bylard et al. 2017
+  SL-12:   {mass_kg: 2440, length_m: 5.6,  diam_m: 3.7}   # [assumption]
+  SL-14:   {mass_kg: 1407, length_m: 2.6,  diam_m: 2.2}   # [assumption]
+  SL-3:    {mass_kg: 1440, length_m: 3.1,  diam_m: 2.6}   # [assumption]
+  CZ-2:    {mass_kg: 4000, length_m: 8.0,  diam_m: 3.35}  # [sourced] Braeunig CZ-2C stage 2
+  CZ-3:    {mass_kg: 2000, length_m: 8.0,  diam_m: 3.0}   # [assumption]
+  CZ-4:    {mass_kg: 1700, length_m: 8.0,  diam_m: 2.9}   # [assumption]
+  CZ-6:    {mass_kg: 2000, length_m: 8.0,  diam_m: 2.9}   # [assumption]
+  DELTA:   {mass_kg: 950,  length_m: 6.0,  diam_m: 2.4}   # [sourced] Delta-K empty 950 kg
+  TITAN:   {mass_kg: 1500, length_m: 6.0,  diam_m: 3.0}   # [assumption]
+  AGENA:   {mass_kg: 700,  length_m: 6.0,  diam_m: 1.5}   # [assumption]
+  THORAD:  {mass_kg: 700,  length_m: 6.0,  diam_m: 1.5}   # [assumption]
+  ATLAS:   {mass_kg: 1800, length_m: 9.0,  diam_m: 3.0}   # [assumption]
+  SCOUT:   {mass_kg: 30,   length_m: 1.5,  diam_m: 0.8}   # [assumption]
+  ARIANE:  {mass_kg: 1400, length_m: 11.5, diam_m: 2.6}   # [sourced] H10 1200-1600 band, midpoint
+  H-2A:    {mass_kg: 3000, length_m: 11.0, diam_m: 4.0}   # [sourced] Astronautix via snippets, medium conf.
+  H-2:     {mass_kg: 3000, length_m: 11.0, diam_m: 4.0}   # [assumption] as H-2A
+  H-1:     {mass_kg: 1400, length_m: 10.0, diam_m: 2.4}   # [assumption]
+  ENVISAT: {mass_kg: 8211, length_m: 10.0, diam_m: 5.0}   # [sourced] launch mass incl 319 kg fuel
+  PAY:     {mass_kg: 3000, length_m: 6.0,  diam_m: 2.5}   # [assumption] large-payload default (top-50 payloads)
+  OTHER:   {mass_kg: 1000, length_m: 5.0,  diam_m: 2.0}   # [assumption]
+
+# --- Study 2: value-of-information ------------------------------------------
+voi:
+  n_draws: 2000            # >= 1000 required by the campaign spec
+  n_top: 50                # ranking population size
+  top_k: 10                # gate counts flips inside top-K
+  flux_vrel_km_s: 10.0     # [assumption] mean relative velocity in band
+  shell_km: 20.0           # altitude bin width for spatial density [assumption]
+  # Prior (current-knowledge) uncertainty, per pasted Gate 1.
+  # CORRECTED after adversarial review: class-documentation uncertainty is
+  # COMMON-MODE within a family (all SL-16s share the same unknown class dry
+  # mass); only the idiosyncratic terms distinguish objects of one family.
+  prior_mass_lo: 0.5       # class mass +/-50% -> uniform [0.5,1.5]x, common per family
+  prior_mass_hi: 1.5
+  prior_area_frac: 0.20    # [assumption] class projected-area +/-20%, common per family
+  prior_mass_idio_frac: 0.05   # [assumption] per-object residual-propellant/config spread
+  prior_area_idio_frac: 0.02   # [assumption] per-object surface/appendage spread
+  documented_mass_frac: 0.10   # [assumption] objects with published individual masses (payloads)
+  prior_flux_frac: 0.10    # [assumption] object-level flux/encounter uncertainty
+  # Spin prior: per-family lognormal over spin period [s].
+  # SL-16: observed synodic periods 78-520 s, sample 11-968 s (Stromberg AMOS
+  # 2023 [sourced], small sample) -> median 200 s, broad sigma.
+  # H-2A: all three observed stages gravity-gradient stabilized, <0.2 deg/s
+  # (Okamoto et al. [sourced]) -> median 2000 s.
+  # default: [assumption] consistent with MMT population split
+  # (~25% rotator / 37% slow rotator / 38% stable, Silha et al. [sourced]).
+  spin_period_median_s:
+    default: 60.0
+    SL-16: 200.0
+    H-2A: 2000.0
+    H-2: 2000.0
+  spin_period_sigma_ln: 1.4  # [assumption] broad: x/÷ ~4 at 1 sigma
+  # Posterior (post-characterization) 1-sigma fractional errors:
+  post_mass_frac: 0.075    # [assumption] +/-15% at 2 sigma; sensitivity run at 0.15
+  post_mass_frac_sens: 0.15
+  post_area_frac: 0.025
+  post_spin_frac: 0.025
+  # Removal-cost model [assumption], anchors in RESULTS.md. Detumble cost is
+  # unvalidatable either way, so BOTH branches are reported: 0.004 makes spin
+  # state economically negligible (fastest observed SL-16 adds ~$0.2M);
+  # 1.0 makes it material (fastest observed SL-16 adds ~$46M vs $2.5M median).
+  cost_fixed_musd: 40.0
+  cost_dv_musd_per_tkm_s: 10.0   # $M per (tonne * km/s) of deorbit impulse
+  # Step-3 Task-1 anchor: e.Deorbit captured at full rate inside a 5 deg/s
+  # any-axis envelope and detumbled the stack (web-verified); detumble impulse
+  # = H / arm-length -> <1 kg propellant for observed R/B spins. Anchored
+  # bracket 0.004-0.05; the Step-2 1.0 branch is retained for reference only
+  # (unsupported by program evidence).
+  detumble_branches_musd_per_kNms: [0.004, 0.05, 0.1, 1.0]  # 0.1 added per review (anchor derivation says 'order 0.01-0.1')
+  deorbit_perigee_km: 60.0
+
+# --- Study 1: tour feasibility ----------------------------------------------
+tour:
+  horizon_days: 730.0
+  dv_budgets_m_s: [150.0, 200.0, 250.0]
+  drift_offsets_km: [10.0, 25.0, 50.0, 80.0]
+  dwell_char_days: 14.0    # [assumption] proximity-ops duration, characterization
+  dwell_tag_days: 30.0     # [assumption] dedicated tagging rendezvous duration
+  prox_margin_char_m_s: 5.0   # [assumption]
+  prox_margin_tag_m_s: 15.0   # [assumption] per pasted Gate 2 'plus prox-ops margin'
+  inc_cluster_deg: 0.4     # [assumption] clustering linkage threshold
+  min_cluster_size: 6
+  milp_max_nodes: 60       # cap MILP size per (cluster, offset, direction)
+  milp_time_limit_s: 60
