@@ -62,3 +62,22 @@ Both were catchable before spending anything.
 - *Guard:* before gathering evidence, run a **single-world coherence check** and
   an **independent metric review** on every pre-registered metric. Cheapest
   possible insurance against a wasted campaign.
+
+## 8. "Structurally doomed" is not "doomed on your timeline"
+A real structural flaw does not tell you *when* it bites. A survival artist with
+no near-term forcing event (no imminent debt maturity, a cash runway, a
+finite-but-unexhausted dilution or bailout engine) can defer the reckoning for
+years — and your dated kill thesis can be right about the disease and wrong about
+the date.
+- *Example (live call, 2026):* a pre-registered "distress by end-2027" thesis on
+  AMC Entertainment was **refuted for that window** by the evidence — the
+  near-term maturities had already been refinanced out to 2029, 2028 was clean,
+  and box office was recovering — even though the structural thesis (cash interest
+  > EBITDA, survival only via value-destructive dilution, attendance structurally
+  below pre-COVID) was sound. The binding event is the 2029 maturity wall, not
+  2027. See `../examples/predictions-ledger.md` (entry 001).
+- *Guard:* pre-register the **timing** against the actual forcing events (the debt
+  maturity ladder, the cash runway, the subsidy expiry date), not a vibe. Separate
+  two verdicts explicitly: *is the structure broken?* and *is there a forcing event
+  inside the horizon?* A broken structure with no near-term trigger is "survives
+  the window, re-date the thesis," not a kill.

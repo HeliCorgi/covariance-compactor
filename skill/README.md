@@ -117,6 +117,11 @@ scripts/verdict_table.py                render the gate verdict table from a sma
   2021-only information, predicting a **KILL** — which the company's March 2025
   bankruptcy confirmed (~3.75 years, inside the pre-registered window). Includes
   the honesty caveat about retrospective target selection.
+- **A live predictions ledger** — [`examples/predictions-ledger.md`](examples/predictions-ledger.md):
+  dated, falsifiable forward calls with probabilities and review dates (the
+  skill's own eval set). Entry 001 (AMC, 2026) shows the discipline *refuting* a
+  dramatic near-term death thesis — the honest result, re-dated to the real 2029
+  forcing event.
 
 ## License
 
