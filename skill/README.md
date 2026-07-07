@@ -106,13 +106,17 @@ scripts/null_control.py                 is a metric evidential, or would a coin 
 scripts/verdict_table.py                render the gate verdict table from a small JSON/YAML file
 ```
 
-## Worked example
+## Worked examples
 
-This repository *is* the worked example: a real, pre-registered, adversarially-
-reviewed campaign that ended in a defensible **kill** of an orbital-debris
-concept. Read `../STEP3_RESULTS.md` (§6: 13 dispositioned review defects) and
-`../RESULTS.md` (§9: the two reversed verdicts) to see the disciplines catching
-real mistakes.
+- **A full campaign** (this repository): a real, pre-registered, adversarially-
+  reviewed campaign that ended in a defensible **kill** of an orbital-debris
+  concept. Read `../STEP3_RESULTS.md` (§6: 13 dispositioned review defects) and
+  `../RESULTS.md` (§9: the two reversed verdicts).
+- **A pre-registered "prophecy"** — [`examples/23andme-premortem-2021.md`](examples/23andme-premortem-2021.md):
+  the skill used as a pre-mortem, frozen at 23andMe's June 2021 IPO with
+  2021-only information, predicting a **KILL** — which the company's March 2025
+  bankruptcy confirmed (~3.75 years, inside the pre-registered window). Includes
+  the honesty caveat about retrospective target selection.
 
 ## License
 
