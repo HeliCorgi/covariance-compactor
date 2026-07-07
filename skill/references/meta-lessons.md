@@ -98,3 +98,21 @@ enterprise alive for years while destroying its shareholders.
   kill *on the equity*. Also verify the assumed trigger actually happened: Plug's
   45V subsidy did **not** get repealed (it survived, window-compressed), so a
   "subsidy is cut" kill leg must be checked against current policy, not assumed.
+
+## 10. Date the tail, and read the counterparty's direction
+A **real** structural single-point-of-failure (customer / supplier / platform
+concentration) is not automatically a *near-term* one. Separate the 3-year
+probability from the 10-year probability, and weigh the most recent signal from
+the critical counterparty: are they **deepening** the relationship (new contracts,
+investment, co-development) or quietly building the capability to **exit**?
+- *Example (2026 live call):* Cirrus Logic's ~91%-of-revenue dependence on Apple is
+  a genuine existential concentration, and Apple has a proven in-sourcing playbook —
+  yet in 2026 Apple was *deepening* it (a ~$400M investment through 2030,
+  co-developing next-gen Face ID silicon), and the latest teardown still showed
+  Cirrus parts. That pushes the existential in-sourcing risk mostly **beyond** the
+  3-year window (~6–10%) into a fatter 5–10-year tail — so the honest call is
+  "survives the window, monitor the counterparty," not a near-term kill. First-pass
+  15–25% was too high once the tail was dated and the counter-signal weighed.
+- *Guard:* for a concentration/dependency thesis, pre-register the horizon
+  explicitly, give separate near- and long-tail probabilities, and update on the
+  counterparty's *direction*, not just the static concentration number.

@@ -101,11 +101,25 @@ getting refuted). Each is falsifiable with a review date. Not advice.
 - **Kill if:** PIF funding slows/stops while gross margin stays deeply negative →
   equity wipe or distressed take-private. **Survive if:** PIF keeps funding AND
   Gravity drives gross margin positive.
-- **First-pass P(equity-wipe / distressed take-private within ~2yr): ~35–45%** —
-  binding variable is PIF *willingness* (unpredictable; just reaffirmed), so
-  near-term death is unlikely; the risk is a slow dilution grind or a low-ball
-  take-private. **Review:** 2027-01, 2027-07. **Alternate:** VinFast (VFS),
-  going-concern-flagged, ~−53% gross margin.
+- **First-pass P(equity-wipe / distressed take-private within ~2yr): ~35–45%.**
+- **DEEP-DIVE VERDICT (2026-07-08): SPLIT (a #9 case) — enterprise survives, the
+  equity is the risk.** PIF support is **confirmed, not waning**: an April 2026
+  $550M Series C preferred within a ~$1.05B raise, the PIF delayed-draw term loan
+  raised $500M to ~$2.5B, and a June 2026 fresh PIF + Uber round (~$750M) plus a
+  ~$800M Saudi credit draw → pro-forma liquidity ~$4.7B, guided "into H2 2027". No
+  near-term debt wall (2026 converts repurchased with new notes due 2031; the DDTL
+  is a captive PIF lender). So **P(hard bankruptcy within ~2yr) ~10–15% (UNLIKELY).**
+  But unit economics are catastrophic and worsening (Q1 2026 gross margin **−110%**,
+  cost of revenue >2× revenue; ~$1.4B/quarter FCF burn; deliveries ~3–4k/quarter,
+  2026 guidance **suspended**; shareholders' equity collapsed **$3.87B → $717M**),
+  and a **PIF take-private is live chatter** (Apr 2026; mcap ~$2.3B ≈ ¼ of PIF's
+  ~$9.5B sunk). So **P(equity wiped OR taken under at a distressed price within
+  ~2yr) ~50% (coin-flip, downside-tilted)** — dominant mode a **low-ball PIF
+  take-private (~30–35%).** Enterprise ~85% survives; the common equity is the
+  thing at risk. First-pass (~35–45%) refined up to ~50% and reframed as a #9 split.
+  [Q1 2026 results; PIF injections (AGBI/IR); take-private reporting]
+  **Review:** 2027-01, 2027-07. **Alternate:** VinFast (VFS), going-concern-flagged,
+  ~−53% gross margin.
 
 ### Entry 003 — GoPro (GPRO) — archetype 3 (one-time-purchase decay)
 - **Direction:** KILL-leaning · **Horizon:** short (<1yr) *(fast-feedback pick)*
@@ -179,7 +193,23 @@ getting refuted). Each is falsifiable with a review date. Not advice.
   revenue. **First-pass P(existential revenue shock from Apple in-sourcing within
   ~3yr): ~15–25%** (low base rate, high impact). This is the ledger's
   both-directions entry: the value is naming the one thing to monitor, not a death
-  call. **Review:** 2027-06, 2028-06.
+  call.
+- **DEEP-DIVE VERDICT (2026-07-08): SURVIVE-call CONFIRMED; 3-year tail revised
+  DOWN to ~6–10%.** The dependency is real and rising (Apple **~91%** of FY2026
+  sales, ~94% in peak quarters; a design-out would be existential, and Apple has a
+  proven in-sourcing playbook — Intel modem → C1, Dialog PMIC). But there is **no
+  near-term catalyst**: the iPhone 17 teardown (Sept 2025) still shows Cirrus audio
+  codec + amps, and — decisively — **Apple is DEEPENING the relationship**: a
+  ~$400M investment in Cirrus through 2030 and co-development of next-gen
+  mixed-signal silicon incl. next-gen Face ID (~$2 ASP, ~$180M potential); content
+  per iPhone is rising; Cirrus is diversifying (PC/laptop targeting ~10%; HPMS —
+  camera controllers, haptics, battery via Lion Semiconductor). So **P(existential
+  >50% revenue loss from Apple in-sourcing within ~3yr) ~6–10%** — first-pass
+  (15–25%) was **too high** for the 3-year horizon; the real risk is a **fatter
+  5–10-year tail** (~2032–33). Honest call: **survives the window; monitor the
+  counterparty's direction** (meta-lesson #10). [FY2026 10-K; iFixit teardown;
+  Apple $400M / Face ID reporting]
+  **Review:** 2027-06, 2028-06.
 
 ### Entry 006 — Opendoor Technologies (OPEN) — archetype 6 (negative unit economics)
 - **Direction:** coin-flip · **Horizon:** medium (1–2yr)
@@ -207,6 +237,23 @@ AMC (survives-window/re-dated), Lucid/GoPro/Plug (kill-leaning), Cirrus
 (survive + named tail), Opendoor (coin-flip) — with two short-horizon calls
 (GoPro, Plug) for fast feedback. When each resolves, record the outcome here and
 fold the lesson into `../references/meta-lessons.md`.
+
+**Deep-dive calibration record (first-pass → deep-dive, 2026-07-08).** Every one
+of the five deep-dived first impressions moved — which is the point of the
+deep-dive + honest-probability discipline:
+
+| Entry | First-pass | After deep-dive | Move |
+|---|---|---|---|
+| 001 AMC | near-term death | ~15–20% by end-2027; structure bites 2029 | **↓ refuted / re-dated** |
+| 002 Lucid | ~35–45% equity | enterprise ~85% survives; equity ~50% wiped/taken-under | **split (#9)** |
+| 003 GoPro | ~45–60% | ~85–90% within ~18mo | **↑ up** |
+| 004 Plug | ~40–55% | insolvency ~20–25%; equity-wipe ~50% | **split (#9)** |
+| 005 Cirrus | tail 15–25% (3yr) | ~6–10% (3yr); fatter 5–10yr tail | **↓ down** |
+
+Three of five (AMC, Lucid, Plug) resolve to "**enterprise survives, equity dies**"
+(meta-lesson #9). Two first-pass numbers were too high (Cirrus, and — for the
+near term — AMC), one was too low (GoPro). Gut first-passes are unreliable;
+date the trigger (#8), specify whose death (#9), and read the counterparty (#10).
 
 *Add future predictions as further entries. Keep both directions represented,
 state a probability, and set a review date so the ledger becomes a calibration
