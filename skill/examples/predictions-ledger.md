@@ -120,6 +120,18 @@ getting refuted). Each is falsifiable with a review date. Not advice.
   **Survive if:** services/new category stabilize revenue and restore positive FCF
   independently.
 - **First-pass P(distress / forced sale / delisting within ~18mo): ~45–60%.**
+- **DEEP-DIVE VERDICT (2026-07-08): KILL — confirmed, revised UP to ~85–90%.**
+  Near-term forcing events are real and several are already partly realized:
+  an auditor **going-concern** opinion (Q1 2026 10-Q, reiterated June 2026);
+  **~$40.7M cash ≈ one quarter of runway** (revolver fully drawn); a **covenant
+  breach** (asset-coverage 1.05x) waived May 2026 with management **expecting
+  future non-compliance** and **cross-default** across all facilities (all debt
+  reclassified current); a **live Houlihan Lokey sale process** (open, no deal);
+  stock **~$0.75, sub-$1** with renewed Nasdaq delisting risk; hardware −33% while
+  subscription is **flat and subscribers −8%**. The first-pass was **too low** —
+  the acute near-term triggers moved it up. Most likely resolution: a **distressed
+  sale** (rescues assets, minimizes/wipes common equity) or restructuring/
+  delisting. Status: **ACTIVE**, several kill-outcomes already partly realized.
   **Review:** 2026-12, 2027-06.
 
 ### Entry 004 — Plug Power (PLUG) — archetype 4 (subsidy-dependent)
@@ -135,10 +147,22 @@ getting refuted). Each is falsifiable with a review date. Not advice.
 - **Kill if:** the subsidy is cut/expires or capacity misses the window **and**
   dilution capacity exhausts → distress within ~2yr. **Survive if:** 45V locked +
   capacity in service + margin to positive + financing holds.
-- **First-pass P(severe distress / dilution-to-oblivion within ~2yr): ~40–55%** —
-  binding on 45V policy status (verify at review) and the 2028 window. **Review:**
-  2027-01, 2027-07. **Alternate:** Sunrun (RUN), ITC-dependent, negative cash
-  generation despite GAAP profit.
+- **First-pass P(severe distress / dilution-to-oblivion within ~2yr): ~40–55%.**
+- **DEEP-DIVE VERDICT (2026-07-08): SPLIT by definition of "death".** The subsidy
+  did NOT get cut — **45V survived** the July 2025 OBBBA law (not repealed), but
+  the begin-construction window was compressed to **before 2028**; Plug's three
+  operating plants qualify, while its DOE-backed expansion is **suspended** (Nov
+  2025 clean-energy pause) and at risk of missing the window. **No near-term debt
+  wall** (convertibles due **2033**). Cash **$223M unrestricted + $184M restricted**
+  (releasing ~$50M/qtr) vs **~$150M/quarter burn**; authorized shares **doubled to
+  3.0B** (Feb 2026) = large remaining dilution runway. So:
+  **P(hard insolvency / Ch 11 within ~2yr) ~20–25% (UNLIKELY)**, but
+  **P(equity-wiping severe dilution within ~2yr) ~50% (coin-flip-to-likely)** —
+  the survival path itself funds 6–8 quarters of burn with equity at a ~$2–3 stock,
+  inflicting 30–60%+ dilution on top of the +40% already suffered. **The company
+  likely survives; the common equity is the thing at risk** (see meta-lesson #9).
+  **Review:** 2027-01, 2027-07. **Alternate:** Sunrun (RUN), ITC-dependent,
+  negative cash generation despite GAAP profit.
 
 ### Entry 005 — Cirrus Logic (CRUS) — archetype 5 (single-customer) — SURVIVE-call
 - **Direction:** SURVIVE (base case) with a **named catastrophic tail** ·

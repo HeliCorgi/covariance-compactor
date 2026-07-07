@@ -81,3 +81,20 @@ the date.
   two verdicts explicitly: *is the structure broken?* and *is there a forcing event
   inside the horizon?* A broken structure with no near-term trigger is "survives
   the window, re-date the thesis," not a kill.
+
+## 9. Specify *whose* death — enterprise vs equity
+"Will it die?" is ambiguous until you say *which* death: a Chapter 11 / insolvency
+of the **enterprise**, or a permanent wipe of the **common equity** (via dilution
+or a distressed take-under). A dilution- or bailout-financed survivor can keep the
+enterprise alive for years while destroying its shareholders.
+- *Examples (2026 live calls):* AMC and Plug Power both look far more likely to
+  **wipe their equity** (relentless dilution — AMC's share count; Plug's authorized
+  shares doubled to 3.0B) than to file Chapter 11 in the window; scoring "bankruptcy"
+  alone would miss the real, higher-probability outcome. GoPro instead faces acute
+  **enterprise** distress (going concern, ~1-quarter cash, a live sale process).
+- *Guard:* pre-register the outcome variable explicitly — enterprise insolvency,
+  equity wipe (>90% permanent loss), delisting, or distressed sale — and give a
+  **separate probability for each**. A company can "survive" and still be a correct
+  kill *on the equity*. Also verify the assumed trigger actually happened: Plug's
+  45V subsidy did **not** get repealed (it survived, window-compressed), so a
+  "subsidy is cut" kill leg must be checked against current policy, not assumed.
