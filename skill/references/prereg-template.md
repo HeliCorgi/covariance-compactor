@@ -51,3 +51,24 @@ Freeze statement:
   reveals that the metric measures degeneracy or re-measures a free alternative.
 - Keep the pre-registrations in a committed file (e.g. `PREREG.md`) so the
   adversarial reviewer can check for post-hoc drift.
+
+## Resolution & scoring (fix these before evidence, too)
+
+For a **live** prediction, also freeze the scoring fields up front, per
+[scoring-taxonomy.md](scoring-taxonomy.md), so it can't rot into a zombie:
+
+```
+Resolution horizon:  <date by which killed/survived should be clear>
+Review checkpoints:  <calendar: +30d/+90d/+1yr>  AND  <event: next earnings /
+                     next raise / debt maturity / policy decision / sale outcome>
+Outcome variable:    <enterprise insolvency | equity wipe >90% | delisting |
+                     distressed sale>  (specify WHICH death — meta-lesson #9)
+Pre-declared labels: killed / wounded / survived / inconclusive / too-early
+Expected cause code: <one of the fixed enum; optional secondary>
+Consensus-at-call:   <price / analyst posture / prevailing narrative TODAY>
+                     (so lead time — the edge — is measurable at resolution)
+```
+
+At each checkpoint, assign a label (even `too-early`) and never leave the
+prediction without a next date. The goal is speed and calibration, not hit-rate:
+did we find the load-bearing weakness *before the market*?

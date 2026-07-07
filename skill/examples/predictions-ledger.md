@@ -17,6 +17,28 @@ including "the thesis is refuted" — never a forced dramatic call. A structural
 weak company with no near-term forcing event is scored **survives-the-window**,
 with the thesis re-dated, not killed.
 
+**Scoring.** Every entry carries fixed fields (resolution date, review triggers,
+a pre-declared label, a cause code, and a consensus-at-call snapshot) per
+[`../references/scoring-taxonomy.md`](../references/scoring-taxonomy.md). Labels:
+**killed / wounded / survived / inconclusive / too-early**. The point is **speed +
+calibration, not hit-rate**: did we find the load-bearing weakness before the
+market — and did the 70%s happen ~70% of the time?
+
+## Scoring summary (interim labels as of 2026-07-08)
+
+| # | Co. | Resolution horizon | Key review triggers | Current label | Primary cause code | Edge vs consensus |
+|---|---|---|---|---|---|---|
+| 001 | AMC | 2029 wall (equity: rolling) | each 10-Q; the 2029 refi | **wounded** (FCF−, diluting) | `capital-structure/dilution-death` (2ry `timing-wrong`) | re-dated the crunch to 2029 vs a 2027 death narrative |
+| 002 | LCID | ~mid-2028 | each quarter; any PIF take-private | **wounded** | `capital-structure/dilution-death` (2ry `backer-or-customer-dependency`) | flagged take-under as the dominant mode, not bankruptcy |
+| 003 | GPRO | ~2027-06 | 2026-12; Sept-2026 covenant test; sale-process outcome | **wounded** (kill-outcomes partly realized) | `one-time-purchase-decay` (2ry `bad-unit-economics`) | mostly consensus now (going concern public); structural read was early |
+| 004 | PLUG | ~2028 | each quarter; 45V/2028 window; DOE-loan decision | **wounded** | `subsidy-or-regulatory` (2ry `capital-structure/dilution-death`) | equity-death framing vs the market's bankruptcy-binary |
+| 005 | CRUS | 3yr (2029) + 5–10yr tail | each iPhone teardown; any Apple audio-insourcing signal | **survived-so-far** | `incumbent-wins` (tail only) | correctly *down*-rated a scary concentration (avoided a false positive) |
+| 006 | OPEN | ~2028 | each quarter; a housing/rate down-cycle | **too-early** (no deep-dive yet) | `bad-unit-economics` (2ry `timing-wrong`) | TBD |
+
+*Labels are interim checkpoints, not resolutions — none has reached its horizon.
+Update the label + a next date at every review; record the outcome and the
+realized lead time when each resolves.*
+
 ---
 
 ## Entry 001 — AMC Entertainment (AMC) — pre-registered 2026-07-08

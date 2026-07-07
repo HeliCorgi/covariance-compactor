@@ -73,6 +73,15 @@ mode applies all of them. Details and worked failure examples are in
    then* recommend proceeding. Format in
    [references/gate-verdict-table.md](references/gate-verdict-table.md).
 
+8. **For a live prediction, score it — and score speed, not hit-rate.** Fix a
+   **resolution date + review triggers** (calendar *and* event-based) so it can't
+   zombie; pre-declare the label set (**killed / wounded / survived / inconclusive
+   / too-early**), a fixed **cause code**, and a **consensus-at-call snapshot** so
+   lead time is measurable. The value is finding the load-bearing weakness *before
+   the market* — prize lead time and calibration over being "right." See
+   [references/scoring-taxonomy.md](references/scoring-taxonomy.md); log calls in a
+   predictions ledger and fold each resolution back into meta-lessons.
+
 ## Quick-kill procedure (default)
 
 1. **State the idea** in one paragraph. Name its **single load-bearing
