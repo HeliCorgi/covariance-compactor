@@ -116,3 +116,20 @@ investment, co-development) or quietly building the capability to **exit**?
 - *Guard:* for a concentration/dependency thesis, pre-register the horizon
   explicitly, give separate near- and long-tail probabilities, and update on the
   counterparty's *direction*, not just the static concentration number.
+
+## 11. Check the metric's definition; a de-rating is not a wipe
+Two adjacent traps that a distress thesis routinely conflates:
+- **Adjusted / go-forward ≠ realized GAAP.** A "we're profitable now" headline is
+  often *adjusted* (excludes stock comp, one-offs) and *projected* ("on a 12-month
+  go-forward basis"), not a realized GAAP quarter. Verify which. *Example:*
+  Opendoor's "adjusted EBITDA positive on a go-forward basis" sat on top of a Q1
+  GAAP net loss of −$173M and excluded ~$120M/quarter of SBC.
+- **A big drawdown is not a kill.** A permanent equity *de-rating* (say −50% to
+  −80% from an inflated level) is a different outcome from an equity *wipe*
+  (>90%). *Example:* Opendoor's real bear case is a de-rating (coin-flip-to-likely)
+  — but the corporate entity runs net cash with non-recourse debt, so an actual
+  wipe/insolvency is ~15–20%. Scoring "kill" would mislabel a likely de-rating as a
+  low-probability wipe.
+- *Guard:* pin the exact metric definition (adjusted vs GAAP, realized vs
+  projected), and pre-register the *magnitude* of the outcome you mean (insolvency
+  / >90% wipe / a specific % drawdown), not a vague "distress."

@@ -33,7 +33,7 @@ market — and did the 70%s happen ~70% of the time?
 | 003 | GPRO | ~2027-06 | 2026-12; Sept-2026 covenant test; sale-process outcome | **wounded** (kill-outcomes partly realized) | `one-time-purchase-decay` (2ry `bad-unit-economics`) | mostly consensus now (going concern public); structural read was early |
 | 004 | PLUG | ~2028 | each quarter; 45V/2028 window; DOE-loan decision | **wounded** | `subsidy-or-regulatory` (2ry `capital-structure/dilution-death`) | equity-death framing vs the market's bankruptcy-binary |
 | 005 | CRUS | 3yr (2029) + 5–10yr tail | each iPhone teardown; any Apple audio-insourcing signal | **survived-so-far** | `incumbent-wins` (tail only) | correctly *down*-rated a scary concentration (avoided a false positive) |
-| 006 | OPEN | ~2028 | each quarter; a housing/rate down-cycle | **too-early** (no deep-dive yet) | `bad-unit-economics` (2ry `timing-wrong`) | TBD |
+| 006 | OPEN | ~2028 | each quarter; a housing/rate down-cycle | **survived-so-far** | `bad-unit-economics` (2ry `timing-wrong`) | net-cash refuted the solvency leg; separated a de-rating from a wipe |
 
 *Labels are interim checkpoints, not resolutions — none has reached its horizon.
 Update the label + a next date at every review; record the outcome and the
@@ -257,9 +257,26 @@ getting refuted). Each is falsifiable with a review date. Not advice.
 - **Kill if:** a housing/rate down-cycle craters the thin spread → inventory
   write-downs + liquidity crunch within ~2–3yr. **Survive if:** durable positive
   contribution margin and adjusted-EBITDA profit *through a full cycle*.
-- **First-pass P(severe distress / equity wipe within ~2–3yr): ~30–45%** — highly
-  contingent on the rate/housing cycle (not company-controllable). **Review:**
-  2027-01, 2027-07.
+- **First-pass P(severe distress / equity wipe within ~2–3yr): ~30–45%.**
+- **DEEP-DIVE VERDICT (2026-07-08): the kill-as-written does NOT survive —
+  downgrade to ~20%; and the thesis MIS-LABELED the outcome.** The *mechanism*
+  holds (Q1 2026 contribution margin **4.4%**, below its own 5–7% target; ~$32M
+  contribution profit vs ~$63M/qtr fixed opex → Adjusted EBITDA **−$31M** even in a
+  benign market; GAAP net loss **−$173M**; no GAAP-profitable quarter; the "adjusted
+  EBITDA positive on a go-forward basis" claim excludes ~$120M/qtr SBC and is
+  projected, not realized). **But the solvency leg is wrong:** the corporate entity
+  runs **~$800M net cash** ($999M cash vs only ~$197M recourse convertibles;
+  $135M due Aug-2026 easily covered), and the ~$1.1B facility debt is **non-recourse,
+  self-liquidating** in bankruptcy-remote VIEs (only ~16% of $7.1B drawn); inventory
+  is modest; housing is soft not crashing (30-yr ~6.4–6.6%, prices ~−2.5% YoY). So
+  **P(corporate insolvency ~2–3yr) ~10–15%; P(equity wipe >90%) ~15–20%.** The real
+  bear outcome — a **50–80% permanent equity *de-rating*** from the meme-inflated
+  ~$5.30 / ~5× book — is coin-flip-to-likely, but a **de-rating is not a wipe**; the
+  pre-registered thesis conflated the two (see meta-lesson #11). Honest label:
+  **survived-so-far** on the distress-kill; unit economics remain unproven. ~20% is
+  conditional on the stable-rate backdrop; a hard housing downturn raises it.
+  [Q1 2026 10-Q; Freddie Mac PMMS]
+  **Review:** 2027-01, 2027-07.
 
 ---
 
@@ -280,11 +297,13 @@ deep-dive + honest-probability discipline:
 | 003 GoPro | ~45–60% | ~85–90% within ~18mo | **↑ up** |
 | 004 Plug | ~40–55% | insolvency ~20–25%; equity-wipe ~50% | **split (#9)** |
 | 005 Cirrus | tail 15–25% (3yr) | ~6–10% (3yr); fatter 5–10yr tail | **↓ down** |
+| 006 OPEN | ~30–45% | ~20% wipe; a 50–80% de-rating is likely but ≠ a kill | **↓ down** |
 
-Three of five (AMC, Lucid, Plug) resolve to "**enterprise survives, equity dies**"
-(meta-lesson #9). Two first-pass numbers were too high (Cirrus, and — for the
-near term — AMC), one was too low (GoPro). Gut first-passes are unreliable;
-date the trigger (#8), specify whose death (#9), and read the counterparty (#10).
+**All six** deep-dived first-passes moved: three **down** (AMC, Cirrus, Opendoor),
+one **up** (GoPro), two **split** into enterprise-vs-equity (Plug, Lucid). Three
+(AMC, Lucid, Plug) resolve to "**enterprise survives, equity dies**" (meta-lesson
+#9). Gut first-passes are unreliable; date the trigger (#8), specify whose death
+(#9), read the counterparty (#10), and check the metric definition (#11).
 
 *Add future predictions as further entries. Keep both directions represented,
 state a probability, and set a review date so the ledger becomes a calibration
