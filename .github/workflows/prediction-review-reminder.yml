@@ -1,0 +1,41 @@
+name: Prediction review reminder
+
+# Opens a GitHub issue (which emails you) when a prediction review is due this
+# month, so the ledger in skill/examples/predictions-ledger.md never zombies.
+# Source of truth: skill/examples/review-schedule.tsv  (YYYY-MM <tab> entries).
+#
+# Caveat: GitHub disables scheduled workflows after 60 days of NO repository
+# activity (and emails you first). The .ics calendar file is the independent
+# backup. Push anything, or re-enable in the Actions tab, to keep it alive.
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"   # 09:00 UTC on the 1st of each month
+  workflow_dispatch: {}    # allows a manual test run from the Actions tab
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Open an issue if a review is due this month
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          MONTH="$(date -u +%Y-%m)"
+          DUE="$(awk -F'\t' -v m="$MONTH" '$1==m{print $2}' skill/examples/review-schedule.tsv)"
+          if [ -z "$DUE" ]; then
+            echo "No prediction reviews due in ${MONTH}."
+            exit 0
+          fi
+          gh issue create \
+            --title "Prediction review due (${MONTH}): ${DUE}" \
+            --assignee HeliCorgi \
+            --body "Automated reminder. **Due this month:** ${DUE}
+
+          For each: update the label (killed / wounded / survived / inconclusive / too-early), set the next review date, and record the cause code + realized lead time in \`skill/examples/predictions-ledger.md\`. Also re-check after the company's latest quarterly earnings. Fold any lesson into \`skill/references/meta-lessons.md\`."

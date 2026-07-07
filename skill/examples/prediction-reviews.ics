@@ -1,0 +1,98 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//HeliCorgi//falsifying-concepts predictions//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Prediction reviews (falsifying-concepts)
+BEGIN:VEVENT
+UID:pred-review-gopro-20260915@covariance-compactor
+DTSTAMP:20260708T000000Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:Review GoPro (003) — Sept liquidity/covenant test
+DESCRIPTION:falsifying-concepts ledger: update GoPro label (killed/wounded/survived/inconclusive/too-early) + next date. Check the Sept-2026 liquidity/covenant test and the strategic-review outcome. Ledger: skill/examples/predictions-ledger.md
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Prediction review due in 1 week: GoPro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pred-review-gopro-20261201@covariance-compactor
+DTSTAMP:20260708T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Review GoPro (003) — interim
+DESCRIPTION:Update GoPro label + next date. Also re-check after the latest quarterly earnings.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Prediction review due in 1 week: GoPro
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pred-review-cluster-20270131@covariance-compactor
+DTSTAMP:20260708T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Review AMC/Lucid/Plug/Opendoor (001/002/004/006)
+DESCRIPTION:Update each label + next date + cause code. AMC dilution/2029-wall; Lucid PIF take-private; Plug 45V/dilution; Opendoor housing-rate cycle.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Prediction reviews due in 1 week: AMC/Lucid/Plug/Opendoor
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pred-review-20270601@covariance-compactor
+DTSTAMP:20260708T000000Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:Review GoPro/Cirrus (003/005)
+DESCRIPTION:Update labels + next dates. Cirrus: any Apple audio-insourcing signal / iPhone teardown.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Prediction reviews due in 1 week: GoPro/Cirrus
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pred-review-20270701@covariance-compactor
+DTSTAMP:20260708T000000Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:Review Lucid/Plug/Opendoor (002/004/006)
+DESCRIPTION:Update labels + next dates + cause codes.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Prediction reviews due in 1 week: Lucid/Plug/Opendoor
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pred-review-cirrus-20280601@covariance-compactor
+DTSTAMP:20260708T000000Z
+DTSTART;VALUE=DATE:20280601
+DTEND;VALUE=DATE:20280602
+SUMMARY:Review Cirrus (005)
+DESCRIPTION:3-year Apple-in-sourcing tail checkpoint; update label + next date.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Prediction review due in 1 week: Cirrus
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pred-review-amc-20280701@covariance-compactor
+DTSTAMP:20260708T000000Z
+DTSTART;VALUE=DATE:20280701
+DTEND;VALUE=DATE:20280702
+SUMMARY:Review AMC (001) — pre-2029-wall
+DESCRIPTION:Assess the 2029 ~$3.17B refinancing wall; update label + next date.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Prediction review due in 1 week: AMC
+END:VALARM
+END:VEVENT
+END:VCALENDAR

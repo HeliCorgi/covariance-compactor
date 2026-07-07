@@ -39,6 +39,15 @@ market — and did the 70%s happen ~70% of the time?
 Update the label + a next date at every review; record the outcome and the
 realized lead time when each resolves.*
 
+**Staying on schedule (don't rely on memory).** Review dates and event triggers
+live in [`review-schedule.tsv`](review-schedule.tsv). Three reminders, most
+hands-off last: (1) import [`prediction-reviews.ics`](prediction-reviews.ics)
+into any calendar — all-day events with a 1-week-before alert; (2) the GitHub
+Action `.github/workflows/prediction-review-reminder.yml` opens an issue (which
+emails you) on the 1st of any month a review is due; (3) optionally, a Claude
+Code scheduled agent that *does* the review — re-checks each due company and
+updates its label — with zero manual effort.
+
 ---
 
 ## Entry 001 — AMC Entertainment (AMC) — pre-registered 2026-07-08
