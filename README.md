@@ -5,7 +5,7 @@ This repository grew, in that order, into **three** things:
 1. **`falsifying-concepts` — a Claude Agent Skill** ([`skill/`](skill/)). A reusable,
    pre-registered, adversarially-reviewed method for **killing weak, over-ambitious, or
    hard-to-reverse ideas early**, before real effort is spent. Two modes (a fast
-   *quick-kill* triage and a *full-campaign*), a growing set of **12 meta-lessons**, a
+   *quick-kill* triage and a *full-campaign*), a growing set of **13 meta-lessons**, a
    scoring taxonomy, and deterministic helper scripts. Start at
    [`skill/README.md`](skill/README.md).
 2. **A live predictions ledger** ([`skill/examples/predictions-ledger.md`](skill/examples/predictions-ledger.md)).
@@ -32,22 +32,25 @@ cheapest existing alternative**, not "vs nothing"; keep one coherent world per c
 run an **independent adversarial review before any verdict is final**; and, for live calls,
 fix dates / resolution labels / cause codes and **score lead time, not hit-rate**.
 
-The **12 meta-lessons** ([`skill/references/meta-lessons.md`](skill/references/meta-lessons.md))
+The **13 meta-lessons** ([`skill/references/meta-lessons.md`](skill/references/meta-lessons.md))
 are the self-deception failure modes it exists to catch — e.g. *a metric a zero-information
 instrument also passes*, *"structurally doomed ≠ doomed on your timeline,"* *specify **whose**
 death (enterprise vs equity)*, *adjusted/go-forward ≠ realized GAAP; a de-rating is not a wipe*,
-and — reflexively — *#12: turn the method on itself; a tool's value is marginal over its true
-null (a good prompt), and "calibration" needs resolved, independent outcomes.*
+*#12: turn the method on itself; a tool's value is marginal over its true null (a good prompt)*,
+and *#13: lock the load-bearing number against the primary source before you theorize.*
 
-**Honest scope (self-kill 2026-07-09).** The skill's durable marginal value over simply
+**Honest scope (self-kill + A/B, 2026-07-09).** The skill's durable marginal value over simply
 prompting a capable model to be skeptical is concentrated in what a one-off prompt *cannot*
 provide: runnable deterministic scripts, a fixed cross-session cause-code / label taxonomy, the
-anti-zombie review scaffolding, and checklist recall of low-frequency high-impact checks. The
-prose disciplines and finance distinctions themselves are ones a capable model already largely
-has — so the value is largest for a user who *lacks* the methodology, and more modest
-(tooling- and consistency-concentrated) for someone who already prompts skeptically. The skill
-was run on itself to establish this; see
-[`skill/examples/self-kill-2026-07.md`](skill/examples/self-kill-2026-07.md).
+anti-zombie review scaffolding, and checklist recall. The prose disciplines themselves are ones a
+capable model already largely has — and a **blind A/B confirmed it**: a tight inline prompt built
+from these disciplines actually *beat* the full multi-file skill on one-shot pre-mortem quality
+(skill won 1 of 8; D = −0.54), so for a **single** analysis the recommended delivery is the
+paste-ready [`skill/references/one-shot-prompt.md`](skill/references/one-shot-prompt.md), and the
+full skill earns its keep on the prompt-irreducible axes above. Value is largest for a user who
+*lacks* the methodology. Established by running the skill on itself —
+[`skill/examples/self-kill-2026-07.md`](skill/examples/self-kill-2026-07.md) and the A/B
+[`skill/examples/ab-test-2026-07-results.md`](skill/examples/ab-test-2026-07-results.md).
 
 **Install:** copy [`skill/`](skill/) to `~/.claude/skills/falsifying-concepts/` (Claude Code),
 or use it on claude.ai / the API — see [`skill/README.md`](skill/README.md).
@@ -115,10 +118,11 @@ skill/               ── the reusable method ──────────�
   README.md            what it's for + how to install (Claude Code / claude.ai / API)
   SKILL.md             the method, modes, disciplines, verdict logic (the entrypoint)
   references/          prereg template, gate/verdict format, adversarial rubric,
-                       evidence labeling, scoring taxonomy, 12 meta-lessons
+                       evidence labeling, scoring taxonomy, one-shot-prompt, 13 meta-lessons
   scripts/             null_control.py, verdict_table.py, calibration_power.py
   examples/            predictions-ledger.md (6 live calls), 23andme-premortem-2021.md,
-                       review-schedule.tsv, prediction-reviews.ics
+                       self-kill-2026-07.md + ab-test-2026-07-{prereg,results}.md
+                       (the skill tested on itself), review-schedule.tsv, prediction-reviews.ics
 .github/workflows/     prediction-review-reminder.yml (opens a review issue when due)
 
 RESULTS.md           ── the origin campaign ─────────────────────────

@@ -174,3 +174,33 @@ were narrowed.
   **independent, fast-resolving** calls exist to make the number mean something.
   Downgrade "compounding asset" to *aspirational until an outcome resolves from the
   world* — same-day distillation is not the resolved-outcome→banked-lesson loop.
+- *Update (the A/B this lesson demanded was run, 2026-07-09):* on a blind, 8-item
+  A/B, the loaded skill did **not** beat a strong inline prompt built from its own
+  disciplines on one-shot pre-mortem quality — it **won only 1 of 8** (D = −0.54,
+  sign test p≈0.02; CI grazes 0). The disciplines work (the winning prompt *is*
+  them); the file-bundle's real advantage is the prompt-irreducible axes, not
+  one-shot prose. Two consequences: ship the disciplines as a tight paste-ready
+  prompt for one-shot use ([`../references/one-shot-prompt.md`](../references/one-shot-prompt.md)),
+  and the loss surfaced **#13**. See [`../examples/ab-test-2026-07-results.md`](../examples/ab-test-2026-07-results.md).
+
+## 13. Lock the load-bearing number against the primary source before you theorize
+A pre-mortem's verdict usually turns on **one** quantity — the debt maturity
+ladder, the cash runway, the contribution margin. Build the thesis first and pull
+that number loosely (from memory, a secondary source, or a half-read filing) and a
+confident, well-reasoned analysis can rest on a fact that is simply wrong —
+everything downstream inherits the error, and the reasoning *looks* rigorous.
+- *Example (A/B self-test, 2026-07-09):* the skill arm reached the right verdicts
+  but lost 6 of 8 items almost entirely by mis-stating the load-bearing capital
+  structure while theorizing — a **~23× overstatement** of Snap's Aug-2026 maturity
+  (~$1.06B claimed vs **$47M** actual) plus an omitted **$1.5B 2033 tranche**; Beyond
+  Meat's term loans dropped; **~$1B of Hims 2030 converts missed on the very 8-K it
+  cited**; a fabricated "$60 peak" labelled `measured, web-verified`. It spent
+  **~1.5× the tokens** and was still less accurate — the failure was
+  theorize-before-verify, not research-less. See
+  [`../examples/ab-test-2026-07-results.md`](../examples/ab-test-2026-07-results.md).
+- *Guard:* **first**, pull the single decision-driving quantity directly from the
+  primary source (the actual 10-K / 10-Q / dataset), **reconcile it** (does the
+  maturity ladder sum to the stated total? does the balance sheet show debt you
+  didn't list?), and label it `measured` **only** once verified against that primary
+  doc — **then** build the thesis. A number that decides the verdict must be locked
+  *before* the argument, not sourced *during* it.

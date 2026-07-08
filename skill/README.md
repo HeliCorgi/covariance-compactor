@@ -60,6 +60,11 @@ sessions' vocabulary); (4) **longitudinal, anti-zombie tracking scaffolding**
 methodology, and more tooling-and-consistency-concentrated for an already-skeptical
 prompter. This scope was established by running the skill on itself — see
 [`examples/self-kill-2026-07.md`](examples/self-kill-2026-07.md) and meta-lesson #12.
+A blind A/B ([`examples/ab-test-2026-07-results.md`](examples/ab-test-2026-07-results.md))
+confirmed it head-on: a tight inline prompt made of these disciplines actually *beat*
+the loaded skill on one-shot pre-mortems (skill won 1 of 8), so for a single analysis
+use the paste-ready [`references/one-shot-prompt.md`](references/one-shot-prompt.md);
+load the full skill for the four prompt-irreducible axes above.
 
 ## The method in one breath
 
@@ -115,8 +120,9 @@ references/prereg-template.md          fill-in pre-registration (metric/threshol
 references/gate-verdict-table.md       verdict table + negative-result report format
 references/adversarial-review-rubric.md what the skeptic attacks; reviewer output format
 references/evidence-labeling.md         measured / assumption / external_validation_required; anti-fabrication
-references/meta-lessons.md              the recurring self-deception failure modes, with examples
+references/meta-lessons.md              the recurring self-deception failure modes (13), with examples
 references/scoring-taxonomy.md          labels / cause codes / dates for scoring live predictions
+references/one-shot-prompt.md           paste-ready prompt for a single analysis (beat the file-bundle in an A/B)
 scripts/null_control.py                 is a metric evidential, or would a coin flip pass it?
 scripts/verdict_table.py                render the gate verdict table from a small JSON/YAML file
 scripts/calibration_power.py            executed null control: is the ledger really "calibration"?
@@ -143,6 +149,12 @@ scripts/calibration_power.py            executed null control: is the ledger rea
   narrowed, and killed two of its own overclaims (the "calibration" label and the
   implied prose-beats-a-prompt margin) — the reflexive worked example behind
   meta-lesson #12.
+- **A blind A/B, skill vs a good prompt** —
+  [`examples/ab-test-2026-07-prereg.md`](examples/ab-test-2026-07-prereg.md) (frozen
+  first) and [`examples/ab-test-2026-07-results.md`](examples/ab-test-2026-07-results.md):
+  on 8 fresh pre-mortems the loaded skill **lost** to a tight inline prompt of its own
+  disciplines (won 1 of 8), mostly by under-verifying the load-bearing numbers — which
+  produced meta-lesson #13 and the one-shot prompt. Honest negative result, acted on.
 
 ## License
 

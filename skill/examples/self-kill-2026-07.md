@@ -147,7 +147,14 @@ both unearned and have been narrowed.
   two adversarial skeptics are the independent check, but a genuinely independent
   human / third-party review would be stronger. Treat the probability reads as
   self-assessed.
-- **No A/B was run.** The clean test of gate A — same idea, *skill-Claude* vs
-  *good-prompt-Claude*, blind-graded by a third agent — has **not** been executed.
-  Until it is, the marginal-value-over-a-good-prompt claim is argued, not measured.
-  This is the next honest step if the claim needs to be load-bearing.
+- **The A/B was run (2026-07-09) — and it went against the skill.** The clean test
+  §7 called for (same targets, *skill-Claude* vs *good-prompt-Claude*, blind-graded)
+  was executed on 8 fresh pre-mortems. The loaded skill **won only 1 of 8** (D =
+  −0.54, sign test p≈0.02; CI grazes 0) — a strong inline prompt built from the
+  skill's *own* disciplines beat it, mainly because the skill arm under-verified the
+  load-bearing capital-structure numbers. This *strengthens* gate A's narrowing (the
+  file-bundle doesn't beat a good prompt for one-shot prose) and produced two fixes:
+  meta-lesson **#13** (lock the load-bearing number first) and a shipped
+  [`../references/one-shot-prompt.md`](../references/one-shot-prompt.md). Full write-up:
+  [`ab-test-2026-07-results.md`](ab-test-2026-07-results.md). It does **not** touch
+  the four prompt-irreducible axes, which this A/B did not test.

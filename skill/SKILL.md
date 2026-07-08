@@ -92,9 +92,14 @@ mode applies all of them. Details and worked failure examples are in
 2. **Pre-register** 1–2 of the cheapest tests that attack that assumption, each
    with a kill threshold, a null control, and the counterfactual
    (prereg-template.md). Freeze the thresholds.
-3. **Gather the minimum evidence:** a focused web/literature check (fetch and
-   verify real sources) or a <150-line calculation on real data. Label every
-   number.
+3. **Lock the load-bearing number first, *then* gather the rest.** Before
+   theorizing, pull the single decision-driving quantity (the debt maturity ladder
+   / cash runway / unit margin) directly from the **primary source** and reconcile
+   it (does the ladder sum to the stated total? is there debt on the balance sheet
+   you didn't list?); label it `measured` only once verified against that primary
+   doc (meta-lesson #13 — theorize-before-verify was the #1 cause of wrong verdicts
+   in the A/B self-test). Then do the focused web/literature check (fetch and verify
+   real sources) or a <150-line calculation on real data. Label every number.
 4. **Adversarial pass:** one fresh skeptic attacks data, counterfactual, and
    arithmetic (adversarial-review-rubric.md). Fix or retract.
 5. **Verdict:** kill (write a short negative-result note: pre-reg, evidence with
