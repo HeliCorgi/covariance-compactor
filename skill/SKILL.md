@@ -78,7 +78,10 @@ mode applies all of them. Details and worked failure examples are in
    zombie; pre-declare the label set (**killed / wounded / survived / inconclusive
    / too-early**), a fixed **cause code**, and a **consensus-at-call snapshot** so
    lead time is measurable. The value is finding the load-bearing weakness *before
-   the market* — prize lead time and calibration over being "right." See
+   the market* — prize lead time and resolution over being "right." (True
+   *calibration* is a later, pooled goal that needs many independent, fast-resolving
+   calls; a small or correlated set is calibration-*ready*, not calibrated — see
+   meta-lesson #12.) See
    [references/scoring-taxonomy.md](references/scoring-taxonomy.md); log calls in a
    predictions ledger and fold each resolution back into meta-lessons.
 

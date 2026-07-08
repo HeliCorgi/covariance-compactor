@@ -133,3 +133,44 @@ Two adjacent traps that a distress thesis routinely conflates:
 - *Guard:* pin the exact metric definition (adjusted vs GAAP, realized vs
   projected), and pre-register the *magnitude* of the outcome you mean (insolvency
   / >90% wipe / a specific % drawdown), not a vague "distress."
+
+## 12. Turn the method on itself — a tool's value is marginal over its *true* null
+The most reflexive trap: over-claiming the value of the falsification method
+itself, using exactly the fallacies (#1 and #3) it exists to catch. On 2026-07-09
+this skill was quick-killed on itself; two of its own claims did not survive and
+were narrowed.
+- **"The disciplines/lessons beat baseline Claude" — confounded (a #1 trap on the
+  tool).** The headline evidence — *"all 6 first-pass probabilities moved under
+  the deep-dive"* — does not isolate skill-vs-prompt: the first-pass *and* the
+  deep-dive were both produced by the same agent, same day, **both with the
+  skill**. It shows *thorough research beats a gut read*, not *the skill beats a
+  good prompt*. A competent one-off skeptical prompt also says "deep-dive, don't
+  trust your first impression," so the **zero-information null moves the
+  probabilities too** — the metric is vacuous for the claim under test. The tool's
+  TRUE null is *a good skeptical prompt*, not *no method*. Marginal value survives
+  only where it is **prompt-irreducible**: runnable deterministic scripts, a fixed
+  cross-session cause-code/label enum (a fresh prompt has no memory of prior
+  sessions' vocabulary), longitudinal tracking scaffolding (.ics / CI / scheduled
+  agent), and **checklist recall** of low-frequency high-impact checks (a capable
+  model *knows* each item but doesn't reliably *retrieve* all of them under load).
+  Not the prose disciplines a capable model already has.
+- **"The predictions ledger is a calibration instrument" — unearned (a #1 trap on
+  the ledger).** With `n_resolved = 0`, every calibration statistic is undefined
+  and the ledger is **identical to a random-probability null** (Brier over 0 pairs
+  = 0/0). Even fully resolved, the design tops out at ~6 calls with ~4 sharing one
+  rate/capital-cycle factor, so the 95% CI on the hit-rate spans **chance to
+  perfection** — it can never reject "uninformative" on its own. "Calibration" was
+  carrying weight the evidence cannot bear; the honest label is a **pre-registered,
+  dated, falsifiable prediction log that is calibration-READY**, not a calibration
+  measurement. Executed proof: `../scripts/calibration_power.py`.
+- *Guard:* measure a method's value as the marginal over its **cheapest real
+  alternative** (a good one-off prompt — its true null), not over "nothing"; when
+  the claim matters, run the actual A/B (skill vs good-prompt on the same idea,
+  blind-graded by a third agent) and report *skill-minus-prompt*. Never call a
+  tiny / unresolved / correlated / self-graded prediction set "calibration."
+  **Freeze the original (date, event, probability) triple** so that re-dating (#8)
+  and enterprise-vs-equity splits (#9) cannot silently become unfalsifiability
+  escape hatches. Score Brier only on exogenous binary events, and only once enough
+  **independent, fast-resolving** calls exist to make the number mean something.
+  Downgrade "compounding asset" to *aspirational until an outcome resolves from the
+  world* — same-day distillation is not the resolved-outcome→banked-lesson loop.

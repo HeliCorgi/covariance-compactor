@@ -7,10 +7,23 @@ resolution and the lesson. This is the skill's own **eval set**: when an entry
 resolves — right or wrong — the lesson is folded into
 [`../references/meta-lessons.md`](../references/meta-lessons.md).
 
+> **Calibration status (honest — self-kill 2026-07-09).** This ledger is a
+> **pre-registered, dated, falsifiable prediction log** that is *calibration-**ready***
+> — it is **not** a calibration *measurement*, and this 6-entry design cannot become
+> one. `n_resolved = 0` today (nothing has reached its horizon), so every calibration
+> statistic is undefined and the ledger is currently indistinguishable from one filled
+> with random probabilities. Even fully resolved it tops out at ~6 calls, ~4 of which
+> (AMC/LCID/PLUG/OPEN) share one rate/capital-cycle factor, so the 95% CI on any
+> hit-rate spans chance-to-perfection. Genuine calibration needs *many more
+> independent, faster-resolving* calls (or an independent grader). The value here is
+> the **pre-registration discipline and the banked lessons**, not a calibration curve.
+> Executed proof: [`../scripts/calibration_power.py`](../scripts/calibration_power.py);
+> the full self-kill is [`self-kill-2026-07.md`](self-kill-2026-07.md). See meta-lesson #12.
+
 **Disclaimer.** Methodology demonstration, **not investment advice**. Everything
 is public information, labeled and sourced. Predictions are probabilistic and
-often wrong; the point is calibration and learning, not stock tips. Nothing here
-is a recommendation to buy, sell, or hold any security.
+often wrong; the point is disciplined prediction logging and learning, not stock
+tips. Nothing here is a recommendation to buy, sell, or hold any security.
 
 **How to read a verdict.** The skill reports the verdict the evidence supports —
 including "the thesis is refuted" — never a forced dramatic call. A structurally
@@ -21,8 +34,10 @@ with the thesis re-dated, not killed.
 a pre-declared label, a cause code, and a consensus-at-call snapshot) per
 [`../references/scoring-taxonomy.md`](../references/scoring-taxonomy.md). Labels:
 **killed / wounded / survived / inconclusive / too-early**. The point is **speed +
-calibration, not hit-rate**: did we find the load-bearing weakness before the
-market — and did the 70%s happen ~70% of the time?
+resolution over hit-rate**: did we find the load-bearing weakness before the
+market? (True *calibration* — whether the 70%s happen ~70% of the time — is a
+future, pooled goal that needs far more independent calls than the six here; see
+the Calibration-status note above.)
 
 ## Scoring summary (interim labels as of 2026-07-08)
 
@@ -38,6 +53,15 @@ market — and did the 70%s happen ~70% of the time?
 *Labels are interim checkpoints, not resolutions — none has reached its horizon.
 Update the label + a next date at every review; record the outcome and the
 realized lead time when each resolves.*
+
+**Frozen scored calls (do not re-date — anti-escape-hatch, per meta-lesson #12).**
+To keep re-dating (#8) and enterprise-vs-equity splits (#9) from becoming
+unfalsifiability escape hatches, the *original* (event, horizon, probability)
+triple is the call that gets scored; any re-dating creates a **new, separately
+tracked** call rather than overwriting the old one. In particular: **AMC's scored
+call is P(distress by end-2027) ≈ 15–20%** — the 2029-wall thesis is a *new* call,
+not a replacement. Score Brier only on the exogenous binary events (Ch. 11 / >90%
+equity loss / delisting / take-under), never on the soft narrative labels.
 
 **Staying on schedule (don't rely on memory).** Review dates and event triggers
 live in [`review-schedule.tsv`](review-schedule.tsv). Three reminders, most
@@ -280,15 +304,18 @@ getting refuted). Each is falsifiable with a review date. Not advice.
 
 ---
 
-**Batch design note (calibration hygiene).** Directions are deliberately mixed —
+**Batch design note (sampling hygiene).** Directions are deliberately mixed —
 AMC (survives-window/re-dated), Lucid/GoPro/Plug (kill-leaning), Cirrus
 (survive + named tail), Opendoor (coin-flip) — with two short-horizon calls
 (GoPro, Plug) for fast feedback. When each resolves, record the outcome here and
 fold the lesson into `../references/meta-lessons.md`.
 
-**Deep-dive calibration record (first-pass → deep-dive, 2026-07-08).** Every one
-of the five deep-dived first impressions moved — which is the point of the
-deep-dive + honest-probability discipline:
+**Deep-dive revision record (first-pass → deep-dive, 2026-07-08) — internal
+revision, *not* calibration.** Every one of the six deep-dived first impressions
+moved — which shows *a disciplined deep-dive beats a gut read* (and is the point of
+the honest-probability discipline). It does **not** measure calibration or show the
+skill beating a good prompt: both passes were run with the skill, same day, and no
+outcome has resolved (see meta-lesson #12 and [`self-kill-2026-07.md`](self-kill-2026-07.md)):
 
 | Entry | First-pass | After deep-dive | Move |
 |---|---|---|---|
@@ -306,5 +333,7 @@ one **up** (GoPro), two **split** into enterprise-vs-equity (Plug, Lucid). Three
 (#9), read the counterparty (#10), and check the metric definition (#11).
 
 *Add future predictions as further entries. Keep both directions represented,
-state a probability, and set a review date so the ledger becomes a calibration
-record.*
+state a probability, and set a review date. Genuine calibration only becomes
+possible once **many more independent, faster-resolving** calls have resolved
+(see the Calibration-status note at the top and meta-lesson #12) — until then this
+is a calibration-ready prediction log, not a calibration record.*

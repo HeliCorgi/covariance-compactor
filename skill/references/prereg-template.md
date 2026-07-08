@@ -70,5 +70,6 @@ Consensus-at-call:   <price / analyst posture / prevailing narrative TODAY>
 ```
 
 At each checkpoint, assign a label (even `too-early`) and never leave the
-prediction without a next date. The goal is speed and calibration, not hit-rate:
-did we find the load-bearing weakness *before the market*?
+prediction without a next date. The goal is speed and resolution, not hit-rate:
+did we find the load-bearing weakness *before the market*? (Calibration proper is
+a later, pooled goal — see meta-lesson #12.)

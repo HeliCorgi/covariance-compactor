@@ -5,7 +5,7 @@ This repository grew, in that order, into **three** things:
 1. **`falsifying-concepts` — a Claude Agent Skill** ([`skill/`](skill/)). A reusable,
    pre-registered, adversarially-reviewed method for **killing weak, over-ambitious, or
    hard-to-reverse ideas early**, before real effort is spent. Two modes (a fast
-   *quick-kill* triage and a *full-campaign*), a growing set of **11 meta-lessons**, a
+   *quick-kill* triage and a *full-campaign*), a growing set of **12 meta-lessons**, a
    scoring taxonomy, and deterministic helper scripts. Start at
    [`skill/README.md`](skill/README.md).
 2. **A live predictions ledger** ([`skill/examples/predictions-ledger.md`](skill/examples/predictions-ledger.md)).
@@ -32,21 +32,41 @@ cheapest existing alternative**, not "vs nothing"; keep one coherent world per c
 run an **independent adversarial review before any verdict is final**; and, for live calls,
 fix dates / resolution labels / cause codes and **score lead time, not hit-rate**.
 
-The **11 meta-lessons** ([`skill/references/meta-lessons.md`](skill/references/meta-lessons.md))
-are the self-deception failure modes it exists to catch — each earned from a real reversal,
-e.g. *a metric a zero-information instrument also passes*, *"structurally doomed ≠ doomed on
-your timeline,"* *specify **whose** death (enterprise vs equity)*, and *adjusted/go-forward ≠
-realized GAAP; a de-rating is not a wipe.*
+The **12 meta-lessons** ([`skill/references/meta-lessons.md`](skill/references/meta-lessons.md))
+are the self-deception failure modes it exists to catch — e.g. *a metric a zero-information
+instrument also passes*, *"structurally doomed ≠ doomed on your timeline,"* *specify **whose**
+death (enterprise vs equity)*, *adjusted/go-forward ≠ realized GAAP; a de-rating is not a wipe*,
+and — reflexively — *#12: turn the method on itself; a tool's value is marginal over its true
+null (a good prompt), and "calibration" needs resolved, independent outcomes.*
+
+**Honest scope (self-kill 2026-07-09).** The skill's durable marginal value over simply
+prompting a capable model to be skeptical is concentrated in what a one-off prompt *cannot*
+provide: runnable deterministic scripts, a fixed cross-session cause-code / label taxonomy, the
+anti-zombie review scaffolding, and checklist recall of low-frequency high-impact checks. The
+prose disciplines and finance distinctions themselves are ones a capable model already largely
+has — so the value is largest for a user who *lacks* the methodology, and more modest
+(tooling- and consistency-concentrated) for someone who already prompts skeptically. The skill
+was run on itself to establish this; see
+[`skill/examples/self-kill-2026-07.md`](skill/examples/self-kill-2026-07.md).
 
 **Install:** copy [`skill/`](skill/) to `~/.claude/skills/falsifying-concepts/` (Claude Code),
 or use it on claude.ai / the API — see [`skill/README.md`](skill/README.md).
 
-## 2. Live predictions ledger (calibration, not tips)
+## 2. Live predictions ledger (a calibration-*ready* prediction log, not tips)
 
-Six dated forward calls, one per failure-mode archetype, each **deep-dived and scored**. The
-honest headline: **every first-pass gut probability moved** under the deep-dive — three down,
-one up, two split into *enterprise-survives-but-equity-dies*. The ledger is the skill's own
-**eval set**: when a call resolves, the lesson folds back into the meta-lessons.
+Six dated, pre-registered forward calls, one per failure-mode archetype, each **deep-dived
+and scored**. One honest finding: **every first-pass gut probability moved** under the
+deep-dive — three down, one up, two split into *enterprise-survives-but-equity-dies*. Note
+what that does and does not show: *a disciplined deep-dive beats a gut read* — **not** that
+this skill beats a good skeptical prompt (both passes were run with the skill). The ledger is
+the skill's own **eval set**, but a calibration-*ready* one, **not a calibration
+*measurement***: **no call has resolved yet** (`n_resolved = 0`), the set is small and ~4 of 6
+are cycle-correlated, so today it is indistinguishable from a random-probability ledger on any
+calibration metric (executed proof:
+[`skill/scripts/calibration_power.py`](skill/scripts/calibration_power.py)). The
+resolved-outcome→banked-lesson loop is **aspirational until a call resolves**. This very claim
+was narrowed by running the skill on itself — see
+[`skill/examples/self-kill-2026-07.md`](skill/examples/self-kill-2026-07.md).
 
 - Full ledger + scoring summary: [`skill/examples/predictions-ledger.md`](skill/examples/predictions-ledger.md)
 - Scoring taxonomy (labels / cause codes / dates / edge): [`skill/references/scoring-taxonomy.md`](skill/references/scoring-taxonomy.md)
@@ -58,7 +78,8 @@ one up, two split into *enterprise-survives-but-equity-dies*. The ledger is the 
   that opens a `Ledger review <month>` PR when a call comes due.
 
 > **Not financial advice.** These are public-information, falsifiable methodology
-> demonstrations with review dates — the point is calibration and learning, not stock tips.
+> demonstrations with review dates — the point is disciplined, pre-registered prediction
+> logging and learning, not stock tips (calibration is a future, pooled goal — see §2).
 
 ## 3. The origin campaign — a debris concept, killed (negative result)
 
@@ -94,8 +115,8 @@ skill/               ── the reusable method ──────────�
   README.md            what it's for + how to install (Claude Code / claude.ai / API)
   SKILL.md             the method, modes, disciplines, verdict logic (the entrypoint)
   references/          prereg template, gate/verdict format, adversarial rubric,
-                       evidence labeling, scoring taxonomy, 11 meta-lessons
-  scripts/             null_control.py, verdict_table.py (deterministic helpers)
+                       evidence labeling, scoring taxonomy, 12 meta-lessons
+  scripts/             null_control.py, verdict_table.py, calibration_power.py
   examples/            predictions-ledger.md (6 live calls), 23andme-premortem-2021.md,
                        review-schedule.tsv, prediction-reviews.ics
 .github/workflows/     prediction-review-reminder.yml (opens a review issue when due)

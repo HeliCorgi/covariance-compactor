@@ -44,8 +44,22 @@ examples in `references/meta-lessons.md`):
    before it's final.
 
 In the campaign that produced this skill, **both** initial gate verdicts were
-wrong and flipped under adversarial review. That's the point: the method catches
-the mistakes a smart, motivated analyst makes by default.
+wrong and flipped under adversarial review — the kind of mistake a smart,
+motivated analyst makes by default when working without a checklist.
+
+**Honest answer to "why not just a prompt?"** A capable model, given a good
+skeptical prompt, already has most of the *prose* disciplines above — so the
+durable margin of a **skill** over a one-off prompt is not the prose; it is what a
+prompt structurally *cannot* provide: (1) **consistent auto-application + recall**
+— you never forget to run the null control under load; (2) **runnable
+deterministic scripts** (`scripts/`) that make the null control an executed number,
+not an intention; (3) a **fixed cross-session cause-code / label taxonomy** so a
+portfolio of calls is cross-tabbable (a fresh prompt has no memory of prior
+sessions' vocabulary); (4) **longitudinal, anti-zombie tracking scaffolding**
+(.ics / CI / a scheduled agent). The value is largest for someone who lacks the
+methodology, and more tooling-and-consistency-concentrated for an already-skeptical
+prompter. This scope was established by running the skill on itself — see
+[`examples/self-kill-2026-07.md`](examples/self-kill-2026-07.md) and meta-lesson #12.
 
 ## The method in one breath
 
@@ -102,8 +116,10 @@ references/gate-verdict-table.md       verdict table + negative-result report fo
 references/adversarial-review-rubric.md what the skeptic attacks; reviewer output format
 references/evidence-labeling.md         measured / assumption / external_validation_required; anti-fabrication
 references/meta-lessons.md              the recurring self-deception failure modes, with examples
+references/scoring-taxonomy.md          labels / cause codes / dates for scoring live predictions
 scripts/null_control.py                 is a metric evidential, or would a coin flip pass it?
 scripts/verdict_table.py                render the gate verdict table from a small JSON/YAML file
+scripts/calibration_power.py            executed null control: is the ledger really "calibration"?
 ```
 
 ## Worked examples
@@ -119,9 +135,14 @@ scripts/verdict_table.py                render the gate verdict table from a sma
   the honesty caveat about retrospective target selection.
 - **A live predictions ledger** — [`examples/predictions-ledger.md`](examples/predictions-ledger.md):
   dated, falsifiable forward calls with probabilities and review dates (the
-  skill's own eval set). Entry 001 (AMC, 2026) shows the discipline *refuting* a
-  dramatic near-term death thesis — the honest result, re-dated to the real 2029
-  forcing event.
+  skill's own calibration-*ready* eval set). Entry 001 (AMC, 2026) shows the
+  discipline *refuting* a dramatic near-term death thesis — the honest result,
+  re-dated to the real 2029 forcing event.
+- **The skill run on itself** — [`examples/self-kill-2026-07.md`](examples/self-kill-2026-07.md):
+  a quick-kill of the skill's *own* value and calibration claims. It survived
+  narrowed, and killed two of its own overclaims (the "calibration" label and the
+  implied prose-beats-a-prompt margin) — the reflexive worked example behind
+  meta-lesson #12.
 
 ## License
 

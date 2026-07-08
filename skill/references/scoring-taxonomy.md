@@ -1,8 +1,13 @@
 # Scoring taxonomy — how predictions resolve
 
 Every live prediction is scored with **fixed fields set before the outcome**, so
-the portfolio can be cross-analyzed and calibrated instead of rotting into
-zombies. Four rules.
+the portfolio can be cross-analyzed and — *once enough independent calls resolve* —
+eventually calibrated, instead of rotting into zombies. Four rules.
+
+> **Calibration is a goal, not a present property.** Fixed fields make a set of
+> predictions calibration-*ready*; they do not make any small, unresolved, or
+> heavily correlated set a calibration *measurement*. See meta-lesson #12 and
+> `../scripts/calibration_power.py`.
 
 ## 1. Fixed judgment dates (no zombies)
 
@@ -59,7 +64,11 @@ prices it** — not being "right" after everyone already knows. So:
   *whose-death* earlier or more precisely than consensus? A correct **survived**
   call — refuting a scary-looking thesis and avoiding a false positive — is also
   edge.
-- At the portfolio level, prize **lead time to the market** and **calibration**
-  (do the 70%s happen ~70% of the time) over raw hit-rate. Death is a rare event,
-  so hit-rate alone is nearly uninformative; a fast, well-calibrated,
-  cause-coded record is the asset.
+- At the portfolio level, prize **lead time to the market** and **resolution**
+  (naming the specific failure mode / timing / whose-death) over raw hit-rate.
+  Death is a rare event, so hit-rate alone is nearly uninformative. True
+  **calibration** (do the 70%s happen ~70% of the time) is the eventual prize, but
+  it needs *many more independent, faster-resolving* calls than a handful of
+  correlated distress bets — score Brier only on exogenous binary events, and only
+  when the sample can actually support it (meta-lesson #12). Until then, the asset
+  is a fast, cause-coded, pre-registered record — calibration-ready, not calibrated.
