@@ -204,3 +204,56 @@ everything downstream inherits the error, and the reasoning *looks* rigorous.
   didn't list?), and label it `measured` **only** once verified against that primary
   doc — **then** build the thesis. A number that decides the verdict must be locked
   *before* the argument, not sourced *during* it.
+- *Re-confirmed in the field (ADSC campaign, 2026-07-11/12):* an independent
+  numeric cross-checker — a role whose only job is to re-derive every
+  transcribed number from the source-of-truth doc, not re-read the
+  implementer's derivation — caught three more #13-type defects pre-merge on a
+  full engineering campaign (WP13-15, github.com/HeliCorgi/ADSC): a
+  self-contradicting midpoint (0.037 presented as the output of the doc's own
+  stated "average the two bounds" rule, which actually computes to 0.0375); an
+  anchor numerator that included line items its own cited method explicitly
+  excluded; and a launch-cost range narrowed against the source's explicit
+  do-not-narrow instruction. #13 is now validated by **recurrence** in an
+  independent campaign, not just same-day distillation. See
+  [`implementation-kill-pipeline.md`](implementation-kill-pipeline.md).
+
+## 14. Price other people's time
+A recommendation that optimizes the **author's** metric (e.g. probability of
+being cited) while consuming a **commons** — volunteer reviewer hours, shared
+infrastructure, others' attention — is not free just because it costs the
+author nothing.
+- *Example (ADSC campaign, 2026-07-11/12):* the owner killed the author's own
+  recommendation to submit an AI-built niche package to JOSS (a
+  peer-reviewed open-source software journal). The load-bearing assumption —
+  "reviewer hours are justified by the contribution" — failed: the package's
+  own analysis showed low cited-demand, so the submission would have
+  externalized real volunteer peer-reviewer hours onto a near-zero-demand
+  contribution.
+- *Guard:* extend counterfactual discipline (#3) to price the cost imposed on
+  **others**, not just the author's own effort. For any action with
+  externalized costs (peer review, code review, ops load on shared
+  infrastructure), require **evidence of external demand before submission** —
+  do not submit and wait to see if anyone cares. Zero-human-cost alternatives
+  (e.g. automated DOI registries, self-archiving) do not need to clear this
+  bar, because they consume no one else's time.
+- See: https://github.com/HeliCorgi/ADSC
+
+## 15. Adversarially review binding specs; faithful agents implement your bugs faithfully
+A spec or prompt that *binds* an implementer's behavior is itself a claim that
+needs the same pre-evidence scrutiny as a metric — an implementer who follows
+it faithfully will faithfully reproduce any bug it contains.
+- *Example (ADSC campaign, WP13 EDT physics, 2026-07-11/12):* an orchestrator's
+  binding design spec specified the signed `cos i` (inclination cosine)
+  instead of `|cos i|` for retrograde orbits — a physics sign bug. The
+  implementer implemented the spec verbatim and, correctly following the
+  say-so-don't-improvise rule, **flagged** the conflict between the spec and
+  physical reality instead of silently "fixing" it. The orchestrator then
+  adjudicated the physics and corrected the spec.
+- *Guard:* specs and prompts that bind downstream implementation need the same
+  pre-evidence coherence review as metrics (#7) — run it before the
+  implementer starts, not after. Simultaneously, require implementers to
+  **flag** spec-vs-reality conflicts rather than improvise a fix: an
+  implementer who silently "corrects" a spec destroys the audit trail and may
+  correct it wrongly; an implementer who flags it lets whoever is accountable
+  for the spec adjudicate.
+- See: https://github.com/HeliCorgi/ADSC

@@ -5,7 +5,7 @@ This repository grew, in that order, into **three** things:
 1. **`falsifying-concepts` — a Claude Agent Skill** ([`skill/`](skill/)). A reusable,
    pre-registered, adversarially-reviewed method for **killing weak, over-ambitious, or
    hard-to-reverse ideas early**, before real effort is spent. Two modes (a fast
-   *quick-kill* triage and a *full-campaign*), a growing set of **13 meta-lessons**, a
+   *quick-kill* triage and a *full-campaign*), a growing set of **15 meta-lessons**, a
    scoring taxonomy, and deterministic helper scripts. Start at
    [`skill/README.md`](skill/README.md).
 2. **A live predictions ledger** ([`skill/examples/predictions-ledger.md`](skill/examples/predictions-ledger.md)).
@@ -32,7 +32,7 @@ cheapest existing alternative**, not "vs nothing"; keep one coherent world per c
 run an **independent adversarial review before any verdict is final**; and, for live calls,
 fix dates / resolution labels / cause codes and **score lead time, not hit-rate**.
 
-The **13 meta-lessons** ([`skill/references/meta-lessons.md`](skill/references/meta-lessons.md))
+The **15 meta-lessons** ([`skill/references/meta-lessons.md`](skill/references/meta-lessons.md))
 are the self-deception failure modes it exists to catch — e.g. *a metric a zero-information
 instrument also passes*, *"structurally doomed ≠ doomed on your timeline,"* *specify **whose**
 death (enterprise vs equity)*, *adjusted/go-forward ≠ realized GAAP; a de-rating is not a wipe*,
@@ -118,7 +118,7 @@ skill/               ── the reusable method ──────────�
   README.md            what it's for + how to install (Claude Code / claude.ai / API)
   SKILL.md             the method, modes, disciplines, verdict logic (the entrypoint)
   references/          prereg template, gate/verdict format, adversarial rubric,
-                       evidence labeling, scoring taxonomy, one-shot-prompt, 13 meta-lessons
+                       evidence labeling, scoring taxonomy, one-shot-prompt, 15 meta-lessons
   scripts/             null_control.py, verdict_table.py, calibration_power.py
   examples/            predictions-ledger.md (6 live calls), 23andme-premortem-2021.md,
                        self-kill-2026-07.md + ab-test-2026-07-{prereg,results}.md

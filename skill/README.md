@@ -120,9 +120,11 @@ references/prereg-template.md          fill-in pre-registration (metric/threshol
 references/gate-verdict-table.md       verdict table + negative-result report format
 references/adversarial-review-rubric.md what the skeptic attacks; reviewer output format
 references/evidence-labeling.md         measured / assumption / external_validation_required; anti-fabrication
-references/meta-lessons.md              the recurring self-deception failure modes (13), with examples
+references/meta-lessons.md              the recurring self-deception failure modes (15), with examples
 references/scoring-taxonomy.md          labels / cause codes / dates for scoring live predictions
 references/one-shot-prompt.md           paste-ready prompt for a single analysis (beat the file-bundle in an A/B)
+references/implementation-kill-pipeline.md multi-agent pattern: implementer -> numeric cross-checker ->
+                                        adversarial reviewer -> CI, for implementations that must match a source
 scripts/null_control.py                 is a metric evidential, or would a coin flip pass it?
 scripts/verdict_table.py                render the gate verdict table from a small JSON/YAML file
 scripts/calibration_power.py            executed null control: is the ledger really "calibration"?
@@ -134,6 +136,14 @@ scripts/calibration_power.py            executed null control: is the ledger rea
   reviewed campaign that ended in a defensible **kill** of an orbital-debris
   concept. Read `../STEP3_RESULTS.md` (§6: 13 dispositioned review defects) and
   `../RESULTS.md` (§9: the two reversed verdicts).
+- **A second full campaign, this time a "survive" build** —
+  [github.com/HeliCorgi/ADSC](https://github.com/HeliCorgi/ADSC): a full
+  engineering execution (WP13 EDT physics, WP14 cost ranges, WP15 proposal
+  package) run under this skill's disciplines, with an auditable pre-merge
+  defect-kill record. It produced the
+  [implementation-kill pipeline](references/implementation-kill-pipeline.md)
+  (implementer -> independent numeric cross-checker -> adversarial reviewer ->
+  CI) and meta-lessons #14-15.
 - **A pre-registered "prophecy"** — [`examples/23andme-premortem-2021.md`](examples/23andme-premortem-2021.md):
   the skill used as a pre-mortem, frozen at 23andMe's June 2021 IPO with
   2021-only information, predicting a **KILL** — which the company's March 2025
