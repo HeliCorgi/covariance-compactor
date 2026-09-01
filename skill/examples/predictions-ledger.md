@@ -45,7 +45,7 @@ the Calibration-status note above.)
 |---|---|---|---|---|---|---|
 | 001 | AMC | 2029 wall (equity: rolling) | each 10-Q; the 2029 refi | **wounded** (FCF−, diluting) | `capital-structure/dilution-death` (2ry `timing-wrong`) | re-dated the crunch to 2029 vs a 2027 death narrative |
 | 002 | LCID | ~mid-2028 | each quarter; any PIF take-private | **wounded** | `capital-structure/dilution-death` (2ry `backer-or-customer-dependency`) | flagged take-under as the dominant mode, not bankruptcy |
-| 003 | GPRO | ~2027-06 | 2026-12; Sept-2026 covenant test; sale-process outcome | **wounded** (kill-outcomes partly realized) | `one-time-purchase-decay` (2ry `bad-unit-economics`) | mostly consensus now (going concern public); structural read was early |
+| 003 | GPRO | ~2027-06 | 2026-12; ~Jan-2027 refi/delisting deadlines; sale-process outcome | **wounded** (Q2 FY26: neg. equity, 2nd covenant breach, no kill yet — rev 2026-09-01) | `one-time-purchase-decay` (2ry `bad-unit-economics`) | mostly consensus now (going concern public); structural read was early |
 | 004 | PLUG | ~2028 | each quarter; 45V/2028 window; DOE-loan decision | **wounded** | `subsidy-or-regulatory` (2ry `capital-structure/dilution-death`) | equity-death framing vs the market's bankruptcy-binary |
 | 005 | CRUS | 3yr (2029) + 5–10yr tail | each iPhone teardown; any Apple audio-insourcing signal | **survived-so-far** | `incumbent-wins` (tail only) | correctly *down*-rated a scary concentration (avoided a false positive) |
 | 006 | OPEN | ~2028 | each quarter; a housing/rate down-cycle | **survived-so-far** | `bad-unit-economics` (2ry `timing-wrong`) | net-cash refuted the solvency leg; separated a de-rating from a wipe |
@@ -202,6 +202,39 @@ getting refuted). Each is falsifiable with a review date. Not advice.
   sale** (rescues assets, minimizes/wipes common equity) or restructuring/
   delisting. Status: **ACTIVE**, several kill-outcomes already partly realized.
   **Review:** 2026-12, 2027-06.
+
+- **SCHEDULED REVIEW (2026-09-01): label held at WOUNDED — deterioration confirmed,
+  no kill event yet.** Q2 FY2026 (period ended 2026-06-30, reported ~2026-08-07):
+  revenue **$105.0M, −31% YoY**; hardware −40%, subscription/services +11%; net
+  loss **$51.0M** (vs −$16.4M Q2 2025); adjusted EBITDA **−$29.5M**; cash **$27.3M**;
+  **stockholders' equity now negative, −$32.7M**. Going-concern opinion reiterated.
+  **New covenant breach:** as of 2026-06-30, GoPro was out of compliance with
+  *both* the minimum-EBITDA covenant and the (now-tightened) 1.15x asset-coverage
+  ratio under the 2025 Credit Agreement — worse than the single 1.05x breach
+  flagged at the last review. [StockTitan 10-Q, gpro-20260630, filed 2026-08-07]
+  Liquidity patch: **$20.0M of new 2026 Notes** raised July 2026 (due 2028); the
+  **$24.4M facility must be refinanced within 180 days of 2026-07-09** (≈ early
+  2027). [StockTitan 8-K] **23% workforce reduction** executed in Q2. **Sale
+  process:** CEO Woodman says it is in the "later stages," but **no transaction
+  has been announced** — Houlihan Lokey process remains open. [CineD 2026-08-10;
+  Bicycle Retailer 2026-08-10] **Nasdaq delisting:** notified 2026-07 for 30
+  consecutive days below the $1 minimum bid; stock ~$0.62–0.88; **180-day grace
+  period runs to ~late January 2027**, trading continues meanwhile. [Investing.com;
+  Bicycle Retailer 2026-07-24; 24/7 Wall St.]
+  **Assessment:** every pre-registered kill-adjacent condition deepened (going
+  concern reiterated, negative equity, a *second* covenant metric breached,
+  workforce cut) but the two hard forcing events — the $24.4M refinancing and the
+  Nasdaq bid-price cure deadline — now converge on **~January 2027**, not
+  September as flagged at the last checkpoint; the sale process could resolve
+  (or force resolution of) both first. This is a **timing note, not a re-date**
+  of the frozen call (meta-lesson #8) — the original short-horizon (<18mo) kill
+  call, pre-registered 2026-07-08, is unaffected and still tracks to its own
+  horizon. Cause code unchanged: primary `one-time-purchase-decay`, secondary
+  `bad-unit-economics`. Label stays **wounded** (not **killed**: no Chapter 11,
+  no completed distressed sale/take-under, and Nasdaq listing is still intact
+  during the grace period). **Next review: 2026-12** (as previously scheduled),
+  or immediately on any sale-process announcement or refinancing/delisting
+  outcome, whichever comes first.
 
 ### Entry 004 — Plug Power (PLUG) — archetype 4 (subsidy-dependent)
 - **Direction:** KILL-leaning · **Horizon:** short–medium
